@@ -64,7 +64,8 @@ body {width: 100%;
 
 .but-bl1 {font-size: 12px;
     text-align: center;
-    padding: 17%;
+    padding: 12%;
+    width: 11rem;
     margin-left: -23%;
     border-radius: 3px;
     letter-spacing: 1.8px;
@@ -77,4 +78,311 @@ body {width: 100%;
     justify-content: space-evenly;
     width: 10%;
     margin-left: 45%;
+}
+
+/*block-2*/
+
+.block-2 {
+    color: #16A085;
+    background-image: url(/img/back/bg-bl-2.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: 100%;
+    display: block;
+}
+
+.block-2-div {
+    display: block;   
+    margin-left: 10%;
+}
+
+.block-2-txt1 {
+    padding-top: 9%;
+    font-size: 18px;
+    letter-spacing: 2.7px;
+}
+
+.block-2-txt2{
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    padding-top: 4%;
+}
+
+.block-2-buttom {
+    font-size: 12px;
+    text-align: center;
+    padding: 1.7%;
+    width: 16%;
+    display: inline;
+    border-radius: 3px;
+    letter-spacing: 1.8px;
+    background-color: #16A085;
+    color: #fff;
+    border: none;
+    margin-top: 4%;
+    margin-bottom: 11.5%;
+}
+
+/*block-desigin*/
+
+
+.block-3 {
+    color: #16A085;
+    background-color: #fff;
+    background-size: 100%;
+    display: block;
+}
+
+.block-3-img {
+    width: 15%;
+    float: left;
+    margin-top: 8%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+.block-3-div {
+    display: block;   
+    margin-left: 50%;
+}
+
+.block-3-txt1 {
+    padding-top: 17%;
+    font-size: 18px;
+    letter-spacing: 2.7px;
+}
+
+.block-3-txt2{
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    padding-top: 4%;
+}
+
+.block-3-buttom {
+    font-size: 12px;
+    text-align: center;
+    padding: 2.5%;
+    width: 28%;
+    display: inline;
+    border-radius: 3px;
+    letter-spacing: 1.8px;
+    background-color: #16A085;
+    color: #fff;
+    border: none;
+    margin-top: 4%;
+    margin-bottom: 11.5%;
+}
+
+.card-clik-bl3 {
+    font-size: 12px;
+    color: #000;
+    letter-spacing: 1.8px;
+}
+
+.left { padding-right: 3%;}
+
+/*block communiti*/
+
+.communiti { 
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: #F5F6F7;
+}
+
+.com-icon {width: 25%;
+    padding-top: 30%;}
+
+.com-block-1 {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    float: left;
+    padding-right: 5%;
+}
+
+.com-text-1 {
+    color: #000;
+    font-size: 16px;
+    padding-top: 5%;
+    letter-spacing: 2.4px;
+}
+
+.com-text-2 {
+    color: #000;
+    font-size: 10px;
+    padding-top: 5%;
+    letter-spacing: 1.5px;
+}
+
+.com-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.com-img-1 {
+    padding: 1%;
+    width: 30%;
+}
+
+.com-img-2 {
+    padding: 1%;
+    width: 30%;
+}
+
+.card-clik-bl4 {
+    display: flex;
+    margin-top: -23%;
+    margin-left: -5%;
+}
+
+.left-blc {
+    padding-right: 90%;
+    }
+
+/*subscribe*/
+
+.subscribe {
+    background-image: url(/img/back/subscribe.png) ;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sub-txt {
+    letter-spacing: 3.6px;
+    font-size: 24px;
+}
+
+.sub-email {
+    color: #000;
+    margin-bottom: 27%;
+    font-size: 16px;
+    display: flex;
+    border: none;
+}
+
+.form-email {
+    padding: 7%;
+}
+
+.sub-txt {
+    margin-top: 27%;
+    padding-bottom: 2%;
+}
+
+.but-email {
+    background-color:#16A085 ;
+    border: none;
+    color: #fff;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+/*download*/
+
+.download {
+    background-color: #F5F6F7;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dow-txt-1 {
+    font-size: 27px;
+    letter-spacing: 3px;
+    padding-top: 6%;
+}
+
+.dow-txt-2 {
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    padding-top: 1%;
+}
+
+.dow-buttom {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.dow-apple-but {
+    background-color: #1ABC9C;
+    color:#fff;
+    font-size: 16px;
+    letter-spacing: 2.4px;
+    text-align: left;
+    width: 80%;
+    white-space: nowrap;
+    display: flex;
+    padding-right: 20%;
+}
+
+.dow-apple-but:hover {
+    background-color: #16A085 ;
+}
+
+.dow-andoid-but {
+    background-color: #1ABC9C;
+    color:#fff;
+    font-size: 16px;
+    letter-spacing: 2.4px;
+    text-align: left;
+    width: 80%;
+    white-space: nowrap;
+    display: flex;
+    padding-right: 20%;
+}
+
+.dow-andoid-but:hover {
+    background-color: #16A085 ;
+}
+
+.dow-txt-app {
+    position: relative;
+    left: 10%;
+    padding-right: 27%;
+}
+
+.dow-txt-and {
+    position: relative;
+    left: 10%;
+    padding-right: 28%;
+}
+
+.icon-app {
+    position: relative;
+    padding: 10%;
+    border: none;
+    width: 30%;
+    background-color: #16A085;
+}
+
+.icon-and {
+    position:relative;
+    padding: 10%;
+    border: none;
+    width: 30%;
+    background-color: #16A085;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 30%;
 }
