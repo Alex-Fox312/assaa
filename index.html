@@ -11,19 +11,42 @@
 
 <body>
     <!--Your Life-->
-    <section class="block-life">
+    <section class="block-life"><a name="start"></a>
+        <section class="burg">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#start" style="color: #ffff;">HOME</a>
+                    <a href="#get" style="color: #ffff;">PHOTO APP</a>
+                    <a href="#des" style="color: #ffff;">DESIGIN</a>
+                    <a href="#dow" style="color: #ffff;">DOWNLOAD</a>
+                </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+            <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                }
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+            </script>
+        </section>
         <container class="menu">
-            <nav class="menu-left">HOME</nav>
-            <nav class="menu-left">PHOTO APP</nav>
+            <nav class="menu-left"><a href="#start" style="color: white;">HOME</a></nav>
+            <nav class="menu-left"><a href="#get" style="color: white;">PHOTO APP</a></nav>
             <div class="logo"><img class="logo-img" src="/img/icon/photo-logo.png" alt="icon"></div>
-            <nav class="menu-right">DESIGIN</nav>
-            <nav class="menu-right">DOWNLOAD</nav>
+            <nav class="menu-right"><a href="#des" style="color: white;">DESIGIN</a></nav>
+            <nav class="menu-right"><a href="#dow" style="color: white;">DOWNLOAD</a></nav>
         </container>
         <container class="centr">
             <div class="centr-1st"> YOUR LIFE , A PHOTO</div>
             <div class="centr-2st">print your life in a simple photo</div>
             <div><button class="but-bl1">
-                    <nobr> GET STARTED</nobr>
+                    <a href="#get" style="color: white;">
+                        <nobr> GET STARTED</nobr>
+                    </a>
                 </button></div>
         </container>
         <container class="b1-icon">
@@ -38,7 +61,7 @@
     <!--End block-->
 
     <!--Block-2-->
-    <section class="block-2">
+    <section class="block-2"><a name="get"></a>
         <container class="block-2-div">
             <div class="block-2-txt1">RAPPRESENT YOUR LIFE WITH A <br>
                 SIMPLE PHOTO</div>
@@ -47,15 +70,15 @@
                 magna aliqua. Ut enim ad minim veniam, quis <br>
                 nostrud exercitation ullamco laboris nisi <br>
                 ut aliquip ex ea commodo consequat.</div>
-            <button class="block-2-buttom">
-                <nobr> GET STARTED</nobr>
-            </button>
+            <a href="#des" style="color:white;"><button class="block-2-buttom">
+                    <nobr> GET STARTED</nobr>
+                </button></a>
         </container>
     </section>
     <!--End block-->
 
     <!--Block Desigin-->
-    <section class="block-3">
+    <section class="block-3"> <a name="des"></a>
         <img class="block-3-img" src="/img/back/ph-bl-3.png" alt="phone">
         <container class="block-3-div">
             <div class="block-3-txt1">DESIGN</div>
@@ -64,13 +87,13 @@
                 magna aliqua. Ut enim ad minim veniam, quis <br>
                 nostrud exercitation ullamco laboris nisi <br>
                 ut aliquip ex ea commodo consequat.</div>
-            <button class="block-3-buttom">
-                <nobr>LEARN MORE</nobr>
-            </button>
+            <a href="#dow" style="color: white;"><button class="block-3-buttom">
+                    <nobr>LEARN MORE</nobr>
+                </button></a>
             <container class="card-clik-bl3">
                 <p>01/05</p>
-                <img class="left" src="/img/svg/fa-angle-left.svg" alt=""><img class="right"
-                    src="/img/svg/fa-angle-right.svg" alt="">
+                <button class="but-card"><img class="left" src="/img/svg/fa-angle-left.svg" alt=""></button>
+                <button class="but-card"><img class="right" src="/img/svg/fa-angle-right.svg" alt=""></button>
             </container>
         </container>
     </section>
@@ -87,8 +110,8 @@
         <img class="com-img-1" src="/img/communiti/com-img1.png" alt="">
         <img class="com-img-2" src="/img/communiti/com-img2.png" alt="">
         <container class="card-clik-bl4">
-            <img class="left-blc" src="/img/svg/fa-angle-left.svg" alt=""><img class="right"
-                src="/img/svg/fa-angle-right.svg" alt="">
+            <button class="but-card"><img class="left" src="/img/svg/fa-angle-left.svg" alt=""></button>
+            <button class="but-card"><img class="right" src="/img/svg/fa-angle-right.svg" alt=""></button>
         </container>
     </section>
     <!--End Block-->
@@ -103,7 +126,7 @@
     <!--end block-->
 
     <!--download-->
-    <section class="download">
+    <section class="download"><a name="dow"></a>
         <conteiner class="dow-txt-1">DOWNLOAD IT</conteiner>
         <conteiner class="dow-txt-2">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR
             INCIDIDUNT UT LABORE
@@ -115,20 +138,30 @@
         </conteiner>
         <conteiner class="dow-buttom">
             <conteiner>
-                <buttom class="dow-apple-but"><a href="https://www.apple.com/">
+                <buttom class="dow-apple-but"><a class="dow-a" href="https://www.apple.com/">
                         <p class="dow-txt-app"> APPLE STORE </p>
                     </a><img class="icon-app" src="/img/icon/fa-apple.svg" alt="">
                 </buttom>
             </conteiner>
             <conteiner>
-                <buttom class="dow-andoid-but"> <a href="https://play.google.com/">
+                <buttom class="dow-andoid-but"> <a class="dow-a" href="https://play.google.com/">
                         <p class="dow-txt-and"> PLAY STORE </p>
                     </a><img class="icon-and" src="/img/icon/fa-android.svg" alt="">
-
                 </buttom>
             </conteiner>
         </conteiner>
     </section>
 </body>
+<footer>
+    <container class="footer">
+        <container class="fot-a">
+            <a href="">CREDITS</a>|<a href="">PRIVACY</a>|<a href="">OUR TEAMS</a><br><br>
+            <a href="" class="fot-txt"> Copyright by phototime - all right reserved </a>
+        </container>
+        <img class="fot-img" src="/img/communiti/phototeh.png" alt="">
+    </container>
+
+
+</footer>
 
 </html>

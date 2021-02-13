@@ -1,15 +1,96 @@
 body {width: 100%;
-    margin: 0 auto;
-    color: #fff;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    margin: 0;
+    color: white;
+    font-family: -apple-system, Roboto, sans-serif;}
 
+a {
+    text-decoration: none;
+}
 
+@media (max-width:500px) {
+    .fot-a { 
+        white-space:normal;
+    }
+}
+
+/*bur-menu*/
+.burg {
+    display: none;
+    position: fixed;
+    margin-top: -4.5%;
+    padding: 2%;
+    z-index: 2;
+}
+
+@media (max-width: 500px ) {.burg {display: flex;}}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+/*end*/
+
+.but-card {
+    height: -90%;
+}
 
 .block-life { background-image: url(/img/back/bg-bl-1.png);
     background-repeat: no-repeat;
     margin: 0 auto;
     background-size: 100%;
     display: block;
+}
+
+@media (max-width: 600px) {
+    .block-life {
+        background-size: 190%;
+    }
 }
 
 .logo { width: 10%;
@@ -24,24 +105,39 @@ body {width: 100%;
     font-size: 16px;
     justify-content: space-around; 
     display: inline-flex;
+    white-space: nowrap;
 }
+
+@media ( max-width: 500px) {
+    .menu-left {
+        display: none;
+}}
 
 .menu-right {
     display: flex;
     font-size: 16px;
     justify-content: space-around; 
     display: inline-flex;
-
 }
 
+@media ( max-width: 500px) {
+    .menu-right {
+        display: none;
+}}
+
 .menu {
-    display:inline-flex;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: auto;
     align-items: center;
     padding-top: 3%;
+    background-color: rgba(1, 155, 175, 0.103);
+    width: 100%;
+    padding-bottom: 2%;
+    position: fixed;
+    margin-top: -1.3%;
 }
+
 
 .centr {
     display: flex;
@@ -54,15 +150,24 @@ body {width: 100%;
     padding-bottom: 15%;
 }
 
-.centr-1st { font-size: 36px ;
+.centr-1st { 
+    font-size: 36px ;
     padding-bottom: 1%;
     letter-spacing: 5.4px}
 
-.centr-2st { font-size: 16px;
+@media (max-width: 600px) {
+    .centr-1st {
+        font-size: 21px;
+    }
+}
+
+.centr-2st {
+    font-size: 16px;
     padding-bottom: 2%;
     letter-spacing: 2.5px}
 
-.but-bl1 {font-size: 12px;
+.but-bl1 {
+    font-size: 12px;
     text-align: center;
     padding: 12%;
     width: 11rem;
@@ -71,7 +176,8 @@ body {width: 100%;
     letter-spacing: 1.8px;
     background-color: #16A085;
     color: #fff;
-    border: none;}
+    border: none;
+}
 
 .b1-icon {display: flex;
     align-items: center;
@@ -89,6 +195,7 @@ body {width: 100%;
     margin: 0 auto;
     background-size: 100%;
     display: block;
+    background-color: #F5F6F7;
 }
 
 .block-2-div {
@@ -123,12 +230,24 @@ body {width: 100%;
     margin-bottom: 11.5%;
 }
 
+@media (max-width:830px) {
+    .block-2-buttom {
+        width: 24%;
+    }
+}
+
+@media (max-width:530px) {
+    .block-2-buttom {
+        width: 35%;
+    }
+}
+
 /*block-desigin*/
 
 
 .block-3 {
     color: #16A085;
-    background-color: #fff;
+    background-color: white;
     background-size: 100%;
     display: block;
 }
@@ -167,10 +286,22 @@ body {width: 100%;
     border-radius: 3px;
     letter-spacing: 1.8px;
     background-color: #16A085;
-    color: #fff;
+    color: white;
     border: none;
     margin-top: 4%;
     margin-bottom: 11.5%;
+}
+
+@media (max-width:830px) {
+    .block-3-buttom {
+        width: 34%;
+    }
+}
+
+@media (max-width:630px) {
+    .block-3-buttom {
+        width: 60%;
+    }
 }
 
 .card-clik-bl3 {
@@ -208,14 +339,14 @@ body {width: 100%;
 .com-text-1 {
     color: #000;
     font-size: 16px;
-    padding-top: 5%;
+    padding-top: 7%;
     letter-spacing: 2.4px;
 }
 
 .com-text-2 {
     color: #000;
     font-size: 10px;
-    padding-top: 5%;
+    padding-top: 7%;
     letter-spacing: 1.5px;
 }
 
@@ -238,13 +369,19 @@ body {width: 100%;
 
 .card-clik-bl4 {
     display: flex;
-    margin-top: -23%;
+    margin-top: -2%;
     margin-left: -5%;
 }
 
 .left-blc {
     padding-right: 90%;
     }
+
+.but-card {
+    height: 8%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
 
 /*subscribe*/
 
@@ -257,6 +394,23 @@ body {width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media (min-width:300px){
+    .subscribe {
+        background-size: 140%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .subscribe {
+        background-size: 105%;
+    }}
+
+@media (max-width: 600px) {
+    .sub-txt {
+        text-align: center;
+    }
 }
 
 .sub-txt {
@@ -284,7 +438,7 @@ body {width: 100%;
 .but-email {
     background-color:#16A085 ;
     border: none;
-    color: #fff;
+    color: white;
     padding-left: 8%;
     padding-right: 8%;
 }
@@ -313,6 +467,12 @@ body {width: 100%;
     padding-top: 1%;
 }
 
+@media (max-width: 960px) {
+    .dow-txt-2 {
+        width: 90%;
+    }
+}
+
 .dow-buttom {
     display: flex;
     justify-content: space-around;
@@ -323,7 +483,7 @@ body {width: 100%;
 
 .dow-apple-but {
     background-color: #1ABC9C;
-    color:#fff;
+    color:white;
     font-size: 16px;
     letter-spacing: 2.4px;
     text-align: left;
@@ -339,7 +499,7 @@ body {width: 100%;
 
 .dow-andoid-but {
     background-color: #1ABC9C;
-    color:#fff;
+    color:white;
     font-size: 16px;
     letter-spacing: 2.4px;
     text-align: left;
@@ -347,6 +507,21 @@ body {width: 100%;
     white-space: nowrap;
     display: flex;
     padding-right: 20%;
+}
+
+@media (max-width:1040px) {
+    .dow-txt-and {
+        display: none;
+    }
+    .dow-txt-app {
+        display: none;
+    }
+    .dow-andoid-but {
+        width: 155%;
+    }
+    .dow-apple-but {
+        width: 180%;
+    }
 }
 
 .dow-andoid-but:hover {
@@ -381,8 +556,63 @@ body {width: 100%;
     background-color: #16A085;
 }
 
-a {
+.dow-a {
     text-decoration: none;
     color: #fff;
     padding-right: 30%;
+}
+/*footer*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fot-a {
+    width: 55%;
+    padding: 2%;
+    white-space: nowrap;
+    align-items:baseline;
+    flex-direction: column;
+    float: left;
+}
+
+@media (max-width:500px) {
+    .fot-a {
+        white-space: normal;
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+.fot-a, a {
+    padding-right: 2%;
+    padding-left: 2%;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 2.1px;
+    flex-direction: column;
+}
+
+.fot-img {
+    width: 4%;}
+
+@media (max-width:500px) {
+    .fot-img {
+        width: 10%;
+    }
+}
+
+.fot-txt {
+    color: black;
+    letter-spacing: 2.1px;
+    font-size: 14px;
+    padding-left: 2%;
+}
+
+.fot-cop {
+    display: flex;
+    justify-content: start;
+    margin-left: 0%;
 }
