@@ -131,7 +131,7 @@ a {
     margin: auto;
     align-items: center;
     padding-top: 3%;
-    background-color: rgba(1, 155, 175, 0.103);
+    background-color: rgba(1, 155, 175, 0.527);
     width: 100%;
     padding-bottom: 2%;
     position: fixed;
@@ -475,86 +475,38 @@ a {
 
 .dow-buttom {
     display: flex;
-    justify-content: space-around;
-    width: 40%;
     padding-top: 2%;
     padding-bottom: 5%;
+    align-items: center;
+}
+
+@media (max-width: 650px) {
+    .dow-buttom {
+        display: block;
+        justify-content:center;
+        padding-left: 17%;
+    }
 }
 
 .dow-apple-but {
-    background-color: #1ABC9C;
-    color:white;
-    font-size: 16px;
-    letter-spacing: 2.4px;
-    text-align: left;
-    width: 80%;
-    white-space: nowrap;
-    display: flex;
-    padding-right: 20%;
+    padding-right: 10%;
 }
 
-.dow-apple-but:hover {
-    background-color: #16A085 ;
-}
-
-.dow-andoid-but {
-    background-color: #1ABC9C;
-    color:white;
-    font-size: 16px;
-    letter-spacing: 2.4px;
-    text-align: left;
-    width: 80%;
-    white-space: nowrap;
-    display: flex;
-    padding-right: 20%;
-}
-
-@media (max-width:1040px) {
-    .dow-txt-and {
-        display: none;
-    }
-    .dow-txt-app {
-        display: none;
-    }
-    .dow-andoid-but {
-        width: 155%;
-    }
+@media (max-width: 650px) {
     .dow-apple-but {
-        width: 180%;
-    }
+        padding: 0;
+        justify-content: center;
+    }}
+
+.dow-android-but {
+    padding-left: 10%;
 }
 
-.dow-andoid-but:hover {
-    background-color: #16A085 ;
-}
-
-.dow-txt-app {
-    position: relative;
-    left: 10%;
-    padding-right: 27%;
-}
-
-.dow-txt-and {
-    position: relative;
-    left: 10%;
-    padding-right: 28%;
-}
-
-.icon-app {
-    position: relative;
-    padding: 10%;
-    border: none;
-    width: 30%;
-    background-color: #16A085;
-}
-
-.icon-and {
-    position:relative;
-    padding: 10%;
-    border: none;
-    width: 30%;
-    background-color: #16A085;
-}
+@media (max-width: 650px) {
+    .dow-android-but {
+        padding: 0;
+        justify-content: center;
+    }}
 
 .dow-a {
     text-decoration: none;
