@@ -108,6 +108,14 @@ a {
     white-space: nowrap;
 }
 
+.menu-left:hover {
+    box-shadow: 0 0 10px 0 #34d0dba4 inset, 0 0 10px 4px #34d0dba4;
+  }
+
+.menu-right:hover {
+    box-shadow: 0 0 10px 0 #34d0dba4 inset, 0 0 10px 4px #34d0dba4;
+  }
+
 @media ( max-width: 500px) {
     .menu-left {
         display: none;
@@ -179,6 +187,10 @@ a {
     border: none;
 }
 
+.but-bl1:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+
 .b1-icon {display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -229,6 +241,10 @@ a {
     margin-top: 4%;
     margin-bottom: 11.5%;
 }
+
+.block-2-buttom:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
 
 @media (max-width:830px) {
     .block-2-buttom {
@@ -292,6 +308,10 @@ a {
     margin-bottom: 11.5%;
 }
 
+.block-3-buttom:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+
 @media (max-width:830px) {
     .block-3-buttom {
         width: 34%;
@@ -309,6 +329,10 @@ a {
     color: #000;
     letter-spacing: 1.8px;
 }
+
+.card-clik-bl3:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
 
 .left { padding-right: 3%;}
 
@@ -381,6 +405,10 @@ a {
     height: 8%;
     border: none;
     background-color: rgba(255, 255, 255, 0);
+}
+
+.but-card:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
 
 /*subscribe*/
@@ -491,6 +519,7 @@ a {
 .dow-apple-but {
     padding-right: 10%;
 }
+
 
 @media (max-width: 650px) {
     .dow-apple-but {
