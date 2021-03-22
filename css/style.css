@@ -260,6 +260,34 @@ a {
 
 /*block-desigin*/
 
+.slider-1-img {
+    width: 100%;
+}
+.slick-next.slick-arrow {
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    padding: 1.7%;
+    width: 16%;
+    display: inline;
+    border-radius: 3px;
+    letter-spacing: 1.8px;
+    background-color: #16A085;
+    color: #fff;
+    border: none;
+    margin-top: 4%;
+    margin-bottom: 11.5%;
+
+}
+
+.slider_des{
+    width: 18%;
+    float: left;
+    margin-top: 8%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
 
 .block-3 {
     color: #16A085;
@@ -330,9 +358,6 @@ a {
     letter-spacing: 1.8px;
 }
 
-.card-clik-bl3:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-  }
 
 .left { padding-right: 3%;}
 

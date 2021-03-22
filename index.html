@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
 <body>
@@ -23,7 +25,7 @@
                 </div>
             </div>
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-            <script src="/burger.js"></script>
+
         </section>
         <container class="menu">
             <nav class="menu-left"><a href="#start" style="color: white;">HOME</a></nav>
@@ -71,7 +73,13 @@
 
     <!--Block Desigin-->
     <section class="block-3"> <a name="des"></a>
-        <img class="block-3-img" src="/img/back/ph-bl-3.png" alt="phone">
+        <div class="slider_des">
+            <div><img class="slider-1-img" src="/img/slider-1/apple-1.jpeg" alt="photo telephone"></div>
+            <div><img class="slider-1-img" src="/img/slider-1/apple-2.jpeg" alt="photo telephone"></div>
+            <div><img class="slider-1-img" src="/img/slider-1/apple-3.jpeg" alt="photo telephone"></div>
+            <div><img class="slider-1-img" src="/img/slider-1/apple-4.jpeg" alt="photo telephone"></div>
+            <div><img class="slider-1-img" src="/img/slider-1/apple-5.jpeg" alt="photo telephone"></div>
+        </div>
         <container class="block-3-div">
             <div class="block-3-txt1">DESIGN</div>
             <div class="block-3-txt2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
@@ -83,6 +91,7 @@
                     <nobr>LEARN MORE</nobr>
                 </button></a>
             <container class="card-clik-bl3">
+
                 <p>01/05</p>
                 <button class="but-card"><img class="left" src="/img/svg/fa-angle-left.svg" alt=""></button>
                 <button class="but-card"><img class="right" src="/img/svg/fa-angle-right.svg" alt=""></button>
@@ -144,6 +153,10 @@
             </conteiner>
         </conteiner>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/script/script.js"></script>
+    <script src="/script/burger.js"></script>
 </body>
 <footer>
     <container class="footer">
