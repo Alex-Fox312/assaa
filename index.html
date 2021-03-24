@@ -92,7 +92,7 @@
                 </button></a>
             <container class="card-clik-bl3">
 
-                <p>01/05</p>
+                <p class="slide__number">01/05</p>
                 <button class="but-card"><img class="left" src="/img/svg/fa-angle-left.svg" alt=""></button>
                 <button class="but-card"><img class="right" src="/img/svg/fa-angle-right.svg" alt=""></button>
             </container>
@@ -108,21 +108,36 @@
             <div class="com-text-2">Lorem ipsum dolor sit amet,<br>
                 consectetur adipiscing elit,</div>
         </conteiner>
-        <img class="com-img-1" src="/img/communiti/com-img1.png" alt="">
-        <img class="com-img-2" src="/img/communiti/com-img2.png" alt="">
+        <div class="slider_com slider2">
+        </div>
         <container class="card-clik-bl4">
-            <button class="but-card"><img class="left" src="/img/svg/fa-angle-left.svg" alt=""></button>
-            <button class="but-card"><img class="right" src="/img/svg/fa-angle-right.svg" alt=""></button>
+            <button class="but-card"><img class="left_com" src="/img/svg/fa-angle-left.svg" alt=""></button>
+            <button class="but-card"><img class="right_com" src="/img/svg/fa-angle-right.svg" alt=""></button>
         </container>
+
     </section>
     <!--End Block-->
 
     <!--Subscribe-->
+
     <section class="subscribe">
         <container class="sub-txt">SUBSCRIBE TO US COMMUNITY</container>
-        <container class="sub-email"><input placeholder="YOUR EMAIL" type="email" class="form-email">
-            <button class="but-email"><b> ✔ </b></button>
-        </container>
+        <form class="sub-email">
+            <a href="#modal" class="open_modal"><input type="email" name="email" id="email" placeholder="Your email"
+                    class="form-email"></a>
+            <button type="button" id="subscribeBtn" class="but-email"><b> ✔
+                </b></button>
+        </form>
+        <div id="modal" class="modal_div">
+            <span class="modal_close">X</span>
+            <p class="modal_txt">Функция недоступна.
+                <br>
+                Приносим свои извинения !
+            </p>
+        </div>
+        <div id="overlay"></div>
+
+        <!-- ссылкa с href="#modal1", oткрoет oкнo с id = modal1-->
     </section>
     <!--end block-->
 
